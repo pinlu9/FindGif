@@ -1,0 +1,133 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ * {
+ margin: 0px;
+ }
+
+
+
+.middle{
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+  vertical-align:top;
+}
+
+img {
+    box-shadow: 10px 10px 5px #888888;
+}
+
+
+.pure-u-1-2{
+  height: 70px;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(20,190,235);
+  border
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  background-color: rgb(20,190,235);
+  text-align: center;
+  width: 100%
+
+}
+
+
+.footer a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+
+.wrap{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 20px auto 30px auto;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.clicker{
+  background-color: white;
+  outline: none;
+  font-weight: 600;
+	  position:absolute;
+  cursor: pointer;
+  padding: 0;
+	  border: none;
+	  height: 64px;
+	  width: 64px;
+  left: 8px;
+  top: 8px;
+	  border-radius: 100px;
+	  z-index: 2;
+}
+
+/*.clicker:active{
+	  transform: translate(0, 1px);
+  height: 63px;
+	  box-shadow: 0px 1px 0 0 rgb(190,190,190) inset;
+}*/
+
+.circle{
+	  position: relative;
+  border-radius:40px;
+	  width: 80px;
+	  height: 80px;
+	  z-index: 1;
+}
+
+
+
+.clicker.faster:hover + .circle, .clicker.faster:active + .circle {
+	  animation: rotator linear .4s infinite;
+}
+
+.clicker.fast:hover + .circle, .clicker.fast:active + .circle {
+	  animation: rotator linear .5s infinite;
+}
+
+.clicker:hover + .circle, .clicker:active + .circle {
+	  animation: rotator linear .8s infinite;
+}
+
+@keyframes rotator{
+	  from{ transform: rotate(0deg); }
+	  to{ transform: rotate(360deg); }
+}
+
+
+.angled.second {
+			background-image: linear-gradient(
+                white 0%,
+                white 30%,
+                rgb(20,190,235) 30%,
+								rgb(20,190,235) 70%,
+                white 70%,
+                white 100%);
+		}
