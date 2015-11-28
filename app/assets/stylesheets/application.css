@@ -18,7 +18,18 @@
  margin: 0px;
  }
 
-
+.header p{
+  position: absolute;
+   position:fixed;
+   top: 0px;
+  padding: 1rem;
+  background-color: rgb(20,190,235);
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 35px;
+  font-family: 'Bangers', cursive;
+}
 
 .middle{
   text-align: center;
@@ -43,7 +54,8 @@ img {
 
 .footer {
   position: absolute;
-  bottom: 0;
+   position:fixed;
+   bottom: 0px;
   padding: 1rem;
   background-color: rgb(20,190,235);
   text-align: center;
