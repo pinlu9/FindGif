@@ -21,8 +21,9 @@
  }
 
 body{
-  background-image: url("http://cdn02.wallpapersonweb.com/media/i1600x1200/1/17/167080-blue-gradient-background-desktop-wallpaper-1600x1200.jpg");
-  background-size: 100%;
+  width: 100%;
+  height: 100%;
+   background-image: url(gradient.png);
 }
 
 .header p{
@@ -30,12 +31,13 @@ body{
    position:fixed;
    top: 0px;
   padding: 1rem;
-  background-color: #0a5cc0;
+  background-color: black;
   text-align: center;
   width: 100%;
   color: white;
   font-size: 35px;
   font-family: 'Bangers', cursive;
+    opacity: 0.5;
 }
 
 .middle{
@@ -59,30 +61,33 @@ img {
   font-size: 40px;
   text-align: center;
   color: rgb(20,190,235);
-  background-image: url();
+opacity: 0.5;
 
 }
 
 
 .footer {
-  position: absolute;
    position:fixed;
    bottom: 0px;
   padding: 1rem;
-  background-color: rgb(90,172,248);
+  background-color: black;
   text-align: center;
-  width: 100%
+  width: 100%;
+  opacity: 0.5;
 
 }
 
+p{
+  color: white;
+}
 
 .footer a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 a:hover {
-    color: white;
+    color: blue;
 }
 
 
@@ -124,6 +129,7 @@ a:hover {
 	  width: 80px;
 	  height: 80px;
 	  z-index: 1;
+    opacity: 0.5;
 }
 
 
