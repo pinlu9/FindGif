@@ -56,4 +56,4 @@ end
 
   gem 'pg'
 
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3', '>= 1.3.11'
