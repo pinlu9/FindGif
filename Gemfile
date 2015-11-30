@@ -55,3 +55,5 @@ end
   gem "puma"
 
   gem 'pg'
+
+  gem 'sqlite3'
