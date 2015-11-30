@@ -16,8 +16,6 @@
 
  * {
  margin: 0px;
-
-
  }
 
 body{
@@ -28,8 +26,8 @@ body{
 
 .header p{
   position: absolute;
-   position:fixed;
-   top: 0px;
+  position:fixed;
+  top: 0px;
   padding: 1rem;
   background-color: black;
   text-align: center;
@@ -37,7 +35,7 @@ body{
   color: white;
   font-size: 35px;
   font-family: 'Bangers', cursive;
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .middle{
@@ -49,32 +47,28 @@ body{
 
 img {
   position:relative;
--webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-
-
 
 .pure-u-1-2{
   height: 70px;
   font-size: 40px;
   text-align: center;
   color: rgb(20,190,235);
-opacity: 0.5;
-
+  opacity: 0.5;
 }
 
 
-.footer {
+.footer{
    position:fixed;
    bottom: 0px;
-  padding: 1rem;
-  background-color: black;
-  text-align: center;
-  width: 100%;
-  opacity: 0.5;
-
+   padding: 1rem;
+   background-color: black;
+   text-align: center;
+   width: 100%;
+   opacity: 0.5;
 }
 
 p{
@@ -86,52 +80,37 @@ p{
   color: white;
 }
 
-a:hover {
-    color: blue;
-}
-
-
 .wrap{
   position: relative;
   width: 80px;
   height: 80px;
   margin: 20px auto 30px auto;
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .clicker{
   background-color: white;
   outline: none;
   font-weight: 600;
-	  position:absolute;
+	position:absolute;
   cursor: pointer;
   padding: 0;
-	  border: none;
-	  height: 64px;
-	  width: 64px;
+	border: none;
+	height: 64px;
+	width: 64px;
   left: 8px;
   top: 8px;
-	  border-radius: 100px;
-	  z-index: 2;
+	border-radius: 100px;
+	z-index: 2;
 }
-
-/*.clicker:active{
-	  transform: translate(0, 1px);
-  height: 63px;
-	  box-shadow: 0px 1px 0 0 rgb(190,190,190) inset;
-}*/
 
 .circle{
 	  position: relative;
-  border-radius:40px;
+    border-radius:40px;
 	  width: 80px;
 	  height: 80px;
 	  z-index: 1;
     opacity: 0.5;
 }
-
 
 
 .clicker.faster:hover + .circle, .clicker.faster:active + .circle {
@@ -153,17 +132,18 @@ a:hover {
 
 
 .angled.second {
-			background-image: linear-gradient(
-                white 0%,
-                white 30%,
-                rgb(20,190,235) 30%,
-								rgb(20,190,235) 70%,
-                white 70%,
-                white 100%);
-		}
+	background-image: linear-gradient(
+    white 0%,
+    white 30%,
+    rgb(20,190,235) 30%,
+		rgb(20,190,235) 70%,
+    white 70%,
+    white 100%);
+}
 
 @media (min-width: 400px) and (max-width: 600px) {
 
   img {
        max-width: 400px;
+}
 }
